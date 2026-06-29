@@ -1118,9 +1118,16 @@
   }
 
   // Form submit
-  function submitForm(e) {
+ async function submitForm(e) {
     e.preventDefault();
-    document.getElementById('quoteForm').style.display = 'none';
+    const form = document.getElementById('quoteForm');
+    const data = new FormData(form);
+    await fetch('https://formspree.io/f/xdardrbd', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    form.style.display = 'none';
     document.getElementById('formSuccess').style.display = 'block';
   }
 
