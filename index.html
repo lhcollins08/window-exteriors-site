@@ -1,0 +1,1164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClearPane Exteriors | Window Cleaning Nixa MO | 417 Area</title>
+  <meta name="description" content="Professional window cleaning in Nixa, Springfield, Ozark, Republic, Battlefield, Willard & the entire 417 area. Streak-free results. Free quotes. Call 417-371-6798." />
+  <meta name="keywords" content="window cleaning Nixa MO, window washing Nixa MO, window cleaning Springfield MO, window cleaning 417 area, residential window cleaning, commercial window cleaning" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ClearPane Exteriors | Crystal Clear Windows" />
+  <meta property="og:description" content="Professional window cleaning in Nixa and the 417 area. Free quotes. Call 417-371-6798." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --blue: #0a2d6e;
+      --blue-mid: #1a4ba8;
+      --blue-light: #2e6fd9;
+      --glass: #a8c8f0;
+      --glass-light: #d6eaff;
+      --white: #ffffff;
+      --charcoal: #1c2332;
+      --gray: #4a5568;
+      --gray-light: #e8edf5;
+      --accent: #e8f4ff;
+      --gold: #f5a623;
+      --radius: 14px;
+      --shadow: 0 8px 40px rgba(10,45,110,0.13);
+      --shadow-lg: 0 20px 60px rgba(10,45,110,0.18);
+      --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--white); overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ===== UTILITY ===== */
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    .section-tag { display: inline-block; background: var(--glass-light); color: var(--blue-mid); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 16px; border-radius: 100px; margin-bottom: 16px; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: var(--charcoal); line-height: 1.15; margin-bottom: 16px; }
+    .section-sub { font-size: 1.1rem; color: var(--gray); line-height: 1.7; max-width: 620px; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px; border-radius: 50px; font-weight: 700; font-size: 1rem; cursor: pointer; transition: var(--transition); border: none; text-decoration: none; }
+    .btn-primary { background: var(--blue-light); color: var(--white); box-shadow: 0 4px 24px rgba(46,111,217,0.35); }
+    .btn-primary:hover { background: var(--blue); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(46,111,217,0.45); }
+    .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.6); }
+    .btn-outline:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
+    .btn-dark { background: var(--blue); color: var(--white); }
+    .btn-dark:hover { background: var(--blue-light); transform: translateY(-2px); }
+    .btn-ghost { background: var(--glass-light); color: var(--blue); }
+    .btn-ghost:hover { background: var(--blue-light); color: var(--white); transform: translateY(-2px); }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes floatY { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-12px);} }
+    @keyframes shimmer { 0%{background-position:-200% 0;} 100%{background-position:200% 0;} }
+    @keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(46,111,217,0.4);} 70%{box-shadow:0 0 0 14px rgba(46,111,217,0);} }
+    .animate { opacity:0; transform:translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .animate.visible { opacity:1; transform:translateY(0); }
+
+    /* ===== STICKY NAV ===== */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(10,45,110,0.97); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: var(--transition);
+    }
+    nav.scrolled { background: rgba(10,45,110,0.99); box-shadow: 0 4px 30px rgba(0,0,0,0.2); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .logo { display: flex; align-items: center; gap: 12px; }
+    .logo-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--blue-light), var(--glass)); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: white; }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-name { font-weight: 800; font-size: 1.15rem; color: white; letter-spacing: -0.02em; }
+    .logo-tagline { font-size: 0.65rem; color: var(--glass); letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 8px; }
+    .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.9rem; font-weight: 500; padding: 8px 14px; border-radius: 8px; transition: var(--transition); }
+    .nav-links a:hover { color: white; background: rgba(255,255,255,0.1); }
+    .nav-cta { display: flex; align-items: center; gap: 12px; }
+    .nav-phone { color: var(--glass); font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 7px; }
+    .nav-phone i { color: var(--gold); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: white; border-radius: 2px; transition: var(--transition); }
+    .mobile-menu { display: none; position: fixed; top: 72px; left:0; right:0; background: var(--blue); z-index: 999; padding: 20px 24px 28px; flex-direction: column; gap: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+    .mobile-menu.open { display: flex; animation: fadeInUp 0.3s ease; }
+    .mobile-menu a { color: white; padding: 12px 16px; border-radius: 8px; font-weight: 500; font-size: 1rem; }
+    .mobile-menu a:hover { background: rgba(255,255,255,0.1); }
+    .mobile-menu .mob-cta { margin-top: 12px; padding: 14px; text-align: center; background: var(--blue-light); border-radius: 50px; font-weight: 700; }
+
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--blue) 0%, #0d3a8a 45%, #1a5bc4 100%);
+      position: relative; overflow: hidden;
+      display: flex; align-items: center;
+      padding: 120px 0 80px;
+    }
+    .hero-bg { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    .hero-circle { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.04); }
+    .hero-circle-1 { width: 600px; height: 600px; top: -200px; right: -100px; animation: floatY 8s ease-in-out infinite; }
+    .hero-circle-2 { width: 400px; height: 400px; bottom: -150px; left: -80px; animation: floatY 10s ease-in-out infinite 2s; }
+    .hero-circle-3 { width: 200px; height: 200px; top: 30%; right: 20%; animation: floatY 6s ease-in-out infinite 1s; background: rgba(168,200,240,0.06); }
+    .hero-glass { position: absolute; top: 15%; right: 5%; width: 420px; height: 280px; background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(168,200,240,0.05)); border: 1px solid rgba(255,255,255,0.12); border-radius: 24px; backdrop-filter: blur(4px); transform: rotate(8deg); animation: floatY 9s ease-in-out infinite 0.5s; display: flex; align-items: center; justify-content: center; }
+    .hero-glass-inner { text-align: center; color: rgba(255,255,255,0.3); font-size: 5rem; }
+    .hero-content { position: relative; z-index: 2; max-width: 650px; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: var(--glass-light); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; padding: 8px 18px; border-radius: 100px; margin-bottom: 28px; animation: fadeIn 0.8s ease 0.2s both; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.6rem, 6vw, 4.2rem); font-weight: 800; color: white; line-height: 1.1; margin-bottom: 24px; animation: fadeInUp 0.8s ease 0.3s both; }
+    .hero-title span { color: var(--glass); }
+    .hero-sub { font-size: 1.15rem; color: rgba(255,255,255,0.78); line-height: 1.7; margin-bottom: 40px; animation: fadeInUp 0.8s ease 0.4s both; }
+    .hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 52px; animation: fadeInUp 0.8s ease 0.5s both; }
+    .call-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--gold); color: var(--charcoal); font-weight: 800; padding: 15px 28px; border-radius: 50px; font-size: 1rem; transition: var(--transition); animation: pulse 2.5s infinite; }
+    .call-btn:hover { background: #f0b429; transform: translateY(-2px); }
+    .hero-trust { display: flex; gap: 24px; flex-wrap: wrap; animation: fadeInUp 0.8s ease 0.6s both; }
+    .trust-item { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.75); font-size: 0.85rem; font-weight: 500; }
+    .trust-item i { color: var(--gold); font-size: 0.8rem; }
+    .hero-phone-bar { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 50px; padding: 12px 24px; margin-bottom: 24px; width: fit-content; animation: fadeInUp 0.8s ease 0.45s both; }
+    .hero-phone-bar span { color: white; font-weight: 700; font-size: 1.3rem; letter-spacing: 0.03em; }
+    .hero-phone-bar i { color: var(--gold); font-size: 1.1rem; }
+
+    /* ===== TRUST BAR ===== */
+    #trust-bar { background: var(--charcoal); padding: 22px 0; }
+    .trust-bar-inner { display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; }
+    .trust-bar-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.75); font-size: 0.9rem; font-weight: 500; }
+    .trust-bar-item i { color: var(--glass); font-size: 1rem; }
+    .trust-bar-divider { width: 1px; height: 22px; background: rgba(255,255,255,0.1); }
+
+    /* ===== SERVICES ===== */
+    #services { padding: 100px 0; background: var(--white); }
+    .services-header { text-align: center; margin-bottom: 64px; }
+    .services-header .section-sub { margin: 0 auto; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
+    .service-card { background: var(--white); border: 1px solid #e2e8f4; border-radius: var(--radius); padding: 36px 30px; transition: var(--transition); position: relative; overflow: hidden; }
+    .service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--blue-light), var(--glass)); opacity: 0; transition: var(--transition); }
+    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: transparent; }
+    .service-card:hover::before { opacity: 1; }
+    .service-icon { width: 60px; height: 60px; background: var(--accent); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--blue-light); margin-bottom: 20px; transition: var(--transition); }
+    .service-card:hover .service-icon { background: var(--blue-light); color: white; }
+    .service-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; color: var(--charcoal); }
+    .service-card p { font-size: 0.92rem; color: var(--gray); line-height: 1.65; }
+
+    /* ===== WHY CHOOSE US ===== */
+    #why { padding: 100px 0; background: linear-gradient(160deg, var(--accent) 0%, var(--white) 100%); }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .why-left { }
+    .why-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 40px; }
+    .why-card { background: white; border-radius: var(--radius); padding: 28px 24px; box-shadow: 0 4px 20px rgba(10,45,110,0.08); transition: var(--transition); border: 1px solid rgba(10,45,110,0.06); }
+    .why-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .why-card-icon { width: 48px; height: 48px; background: linear-gradient(135deg, var(--blue-light), var(--blue)); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; margin-bottom: 16px; }
+    .why-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+    .why-card p { font-size: 0.88rem; color: var(--gray); line-height: 1.6; }
+    .why-right { background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%); border-radius: 24px; padding: 52px 40px; color: white; text-align: center; position: relative; overflow: hidden; }
+    .why-right::before { content: ''; position: absolute; top: -60px; right: -60px; width: 200px; height: 200px; background: rgba(255,255,255,0.06); border-radius: 50%; }
+    .why-stat { margin-bottom: 32px; }
+    .why-stat-num { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 800; color: white; line-height: 1; }
+    .why-stat-label { font-size: 0.9rem; color: var(--glass-light); margin-top: 6px; }
+    .why-divider { width: 40px; height: 2px; background: rgba(255,255,255,0.2); margin: 24px auto; }
+    .why-quote { font-size: 1.15rem; font-style: italic; color: rgba(255,255,255,0.85); line-height: 1.6; margin-bottom: 28px; }
+
+    /* ===== BEFORE AFTER ===== */
+    #gallery { padding: 100px 0; background: var(--charcoal); }
+    .gallery-header { text-align: center; margin-bottom: 60px; }
+    .gallery-header .section-title { color: white; }
+    .gallery-header .section-sub { color: rgba(255,255,255,0.6); margin: 0 auto; }
+    .gallery-header .section-tag { background: rgba(168,200,240,0.15); color: var(--glass); }
+    .ba-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+    .ba-card { border-radius: var(--radius); overflow: hidden; position: relative; background: #2d3a50; height: 280px; cursor: pointer; }
+    .ba-card-inner { height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 16px; background: linear-gradient(135deg, rgba(46,111,217,0.3), rgba(10,45,110,0.5)); transition: var(--transition); }
+    .ba-card:hover .ba-card-inner { background: linear-gradient(135deg, rgba(46,111,217,0.5), rgba(10,45,110,0.7)); }
+    .ba-icon { font-size: 3rem; color: var(--glass); }
+    .ba-label { color: white; font-weight: 600; font-size: 1rem; }
+    .ba-sub { color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+    .ba-badge { position: absolute; top: 16px; left: 16px; padding: 5px 14px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+    .ba-badge.before { background: rgba(255,100,100,0.25); color: #ff9999; border: 1px solid rgba(255,100,100,0.3); }
+    .ba-badge.after { background: rgba(46,217,111,0.25); color: #6effa0; border: 1px solid rgba(46,217,111,0.3); }
+
+    /* ===== QUOTE FORM ===== */
+    #quote { padding: 100px 0; background: var(--white); }
+    .quote-wrap { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: start; }
+    .quote-left { }
+    .quote-features { margin-top: 40px; display: flex; flex-direction: column; gap: 18px; }
+    .quote-feat { display: flex; align-items: flex-start; gap: 14px; }
+    .quote-feat-icon { width: 40px; height: 40px; background: var(--accent); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--blue-light); font-size: 1rem; flex-shrink: 0; }
+    .quote-feat h5 { font-size: 0.95rem; font-weight: 700; margin-bottom: 3px; }
+    .quote-feat p { font-size: 0.85rem; color: var(--gray); line-height: 1.5; }
+    .quote-form-wrap { background: var(--white); border-radius: 20px; box-shadow: var(--shadow-lg); border: 1px solid #e2e8f4; padding: 44px 40px; }
+    .form-title { font-size: 1.4rem; font-weight: 800; margin-bottom: 6px; }
+    .form-sub { font-size: 0.9rem; color: var(--gray); margin-bottom: 28px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-group label { font-size: 0.83rem; font-weight: 600; color: var(--charcoal); }
+    .form-group input, .form-group select, .form-group textarea {
+      padding: 13px 16px; border: 1.5px solid #d4dbe8; border-radius: 10px;
+      font-size: 0.92rem; font-family: 'Inter', sans-serif; color: var(--charcoal);
+      transition: var(--transition); background: var(--white);
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none; border-color: var(--blue-light); box-shadow: 0 0 0 3px rgba(46,111,217,0.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+    .form-submit { width: 100%; margin-top: 20px; padding: 16px; font-size: 1.05rem; font-weight: 800; background: linear-gradient(135deg, var(--blue-light), var(--blue)); color: white; border: none; border-radius: 50px; cursor: pointer; transition: var(--transition); display: flex; align-items: center; justify-content: center; gap: 10px; }
+    .form-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(46,111,217,0.4); }
+
+    /* ===== BOOK ===== */
+    #book { padding: 80px 0; background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%); }
+    .book-inner { text-align: center; }
+    .book-inner .section-title { color: white; margin-bottom: 16px; }
+    .book-inner .section-sub { color: rgba(255,255,255,0.75); margin: 0 auto 40px; }
+    .book-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 800px; margin: 0 auto 48px; }
+    .book-step { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+    .step-num { width: 56px; height: 56px; background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; color: white; }
+    .book-step p { color: rgba(255,255,255,0.8); font-size: 0.9rem; font-weight: 500; text-align: center; }
+    .book-actions { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* ===== TESTIMONIALS ===== */
+    #testimonials { padding: 100px 0; background: var(--gray-light); }
+    .test-header { text-align: center; margin-bottom: 60px; }
+    .test-header .section-sub { margin: 0 auto; }
+    .test-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+    .test-card { background: white; border-radius: var(--radius); padding: 36px 32px; box-shadow: 0 4px 24px rgba(10,45,110,0.07); transition: var(--transition); position: relative; }
+    .test-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .test-stars { display: flex; gap: 4px; color: var(--gold); font-size: 1rem; margin-bottom: 18px; }
+    .test-text { font-size: 1.02rem; color: var(--charcoal); line-height: 1.7; font-style: italic; margin-bottom: 24px; }
+    .test-author { display: flex; align-items: center; gap: 14px; }
+    .test-avatar { width: 46px; height: 46px; background: linear-gradient(135deg, var(--blue-light), var(--glass)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1rem; }
+    .test-name { font-weight: 700; font-size: 0.95rem; }
+    .test-loc { font-size: 0.8rem; color: var(--gray); }
+    .test-quote-mark { position: absolute; top: 24px; right: 28px; font-size: 4rem; color: var(--glass-light); font-family: Georgia, serif; line-height: 1; }
+
+    /* ===== SERVICE AREAS ===== */
+    #areas { padding: 100px 0; background: var(--white); }
+    .areas-header { text-align: center; margin-bottom: 60px; }
+    .areas-header .section-sub { margin: 0 auto; }
+    .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+    .area-card { border: 1.5px solid #e2e8f4; border-radius: var(--radius); padding: 32px 28px; transition: var(--transition); cursor: pointer; }
+    .area-card:hover { border-color: var(--blue-light); background: var(--accent); transform: translateY(-4px); box-shadow: var(--shadow); }
+    .area-icon { font-size: 1.8rem; margin-bottom: 14px; }
+    .area-card h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 10px; color: var(--blue); }
+    .area-services { display: flex; flex-direction: column; gap: 6px; margin-top: 14px; }
+    .area-service { font-size: 0.82rem; color: var(--gray); display: flex; align-items: center; gap: 7px; }
+    .area-service i { color: var(--blue-light); font-size: 0.7rem; }
+
+    /* ===== ABOUT ===== */
+    #about { padding: 100px 0; background: var(--accent); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .about-img { background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%); border-radius: 24px; height: 460px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px; color: white; text-align: center; padding: 40px; position: relative; overflow: hidden; }
+    .about-img::before { content: ''; position: absolute; top: -80px; left: -80px; width: 250px; height: 250px; background: rgba(255,255,255,0.05); border-radius: 50%; }
+    .about-img-icon { font-size: 5rem; color: rgba(255,255,255,0.5); }
+    .about-img h3 { font-size: 1.6rem; font-weight: 800; }
+    .about-img p { color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6; }
+    .about-content { }
+    .about-values { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 36px; }
+    .about-val { background: white; border-radius: 12px; padding: 20px; display: flex; align-items: flex-start; gap: 12px; }
+    .about-val-icon { color: var(--blue-light); font-size: 1.1rem; margin-top: 2px; }
+    .about-val h5 { font-size: 0.88rem; font-weight: 700; margin-bottom: 3px; }
+    .about-val p { font-size: 0.8rem; color: var(--gray); }
+
+    /* ===== FAQ ===== */
+    #faq { padding: 100px 0; background: var(--white); }
+    .faq-wrap { display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px; align-items: start; }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { border: 1.5px solid #e2e8f4; border-radius: 12px; overflow: hidden; transition: var(--transition); }
+    .faq-item.open { border-color: var(--blue-light); box-shadow: 0 4px 16px rgba(46,111,217,0.1); }
+    .faq-q { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; cursor: pointer; font-weight: 600; font-size: 0.95rem; gap: 12px; }
+    .faq-q i { color: var(--blue-light); font-size: 0.8rem; transition: var(--transition); flex-shrink: 0; }
+    .faq-item.open .faq-q i { transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s ease; }
+    .faq-item.open .faq-a { max-height: 200px; }
+    .faq-a-inner { padding: 0 24px 20px; font-size: 0.9rem; color: var(--gray); line-height: 1.7; border-top: 1px solid #e2e8f4; padding-top: 16px; }
+
+    /* ===== CONTACT ===== */
+    #contact { padding: 100px 0; background: linear-gradient(160deg, var(--charcoal) 0%, #111827 100%); }
+    .contact-inner { text-align: center; }
+    .contact-inner .section-title { color: white; }
+    .contact-inner .section-sub { color: rgba(255,255,255,0.65); margin: 0 auto 52px; }
+    .contact-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; max-width: 860px; margin: 0 auto 52px; }
+    .contact-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius); padding: 32px 24px; text-align: center; transition: var(--transition); }
+    .contact-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-4px); }
+    .contact-card i { font-size: 2rem; color: var(--glass); margin-bottom: 16px; }
+    .contact-card h4 { color: white; font-size: 0.9rem; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .contact-card a, .contact-card p { color: rgba(255,255,255,0.85); font-size: 1rem; font-weight: 700; }
+    .contact-cta-btns { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* ===== MAP ===== */
+    #map { height: 380px; background: #1c2332; position: relative; overflow: hidden; }
+    .map-placeholder { height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 16px; }
+    .map-placeholder i { font-size: 3rem; color: var(--glass); }
+    .map-placeholder p { color: rgba(255,255,255,0.7); font-size: 1rem; font-weight: 600; }
+    .map-placeholder span { color: rgba(255,255,255,0.45); font-size: 0.85rem; }
+
+    /* ===== FOOTER ===== */
+    footer { background: #0a0f1e; padding: 64px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 52px; }
+    .footer-brand { }
+    .footer-tagline { color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.7; margin: 16px 0 24px; }
+    .footer-social { display: flex; gap: 12px; }
+    .social-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); font-size: 0.9rem; transition: var(--transition); }
+    .social-btn:hover { border-color: var(--blue-light); color: var(--blue-light); }
+    .footer-col h5 { color: white; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 20px; }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { color: rgba(255,255,255,0.5); font-size: 0.9rem; transition: var(--transition); }
+    .footer-links a:hover { color: var(--glass); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-bottom p { color: rgba(255,255,255,0.35); font-size: 0.82rem; }
+    .footer-phone { color: var(--glass); font-weight: 700; font-size: 1rem; display: flex; align-items: center; gap: 8px; }
+
+    /* ===== FLOATING CTA ===== */
+    .floating-cta { position: fixed; bottom: 28px; right: 28px; z-index: 998; display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
+    .float-btn { display: flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 50px; font-weight: 700; font-size: 0.9rem; cursor: pointer; box-shadow: 0 8px 28px rgba(0,0,0,0.25); transition: var(--transition); animation: pulse 3s infinite; }
+    .float-call { background: var(--gold); color: var(--charcoal); }
+    .float-call:hover { transform: scale(1.05); }
+    .float-quote { background: var(--blue); color: white; animation: none; }
+    .float-quote:hover { background: var(--blue-light); transform: scale(1.05); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .why-grid, .about-grid, .faq-wrap { grid-template-columns: 1fr; gap: 40px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+      .hero-glass { display: none; }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .quote-wrap { grid-template-columns: 1fr; gap: 40px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .why-cards { grid-template-columns: 1fr; }
+      .book-steps { grid-template-columns: 1fr; gap: 20px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .about-values { grid-template-columns: 1fr; }
+      .floating-cta { bottom: 16px; right: 16px; }
+      .float-btn span { display: none; }
+      .float-btn { padding: 14px; border-radius: 50%; }
+    }
+    @media (max-width: 480px) {
+      .trust-bar-divider { display: none; }
+      .trust-bar-inner { gap: 16px; }
+      .hero-trust { gap: 12px; }
+      .faq-wrap { gap: 24px; }
+    }
+
+    /* ===== SUCCESS MESSAGE ===== */
+    .form-success { display: none; text-align: center; padding: 40px; }
+    .form-success i { font-size: 3rem; color: #22c55e; margin-bottom: 16px; }
+    .form-success h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 8px; }
+    .form-success p { color: var(--gray); }
+  </style>
+</head>
+<body>
+
+<!-- ===== STICKY NAV ===== -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-window-restore"></i></div>
+        <div class="logo-text">
+          <span class="logo-name">ClearPane Exteriors</span>
+          <span class="logo-tagline">417 Area Window Cleaning</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#areas">Areas</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="tel:4173716798" class="nav-phone"><i class="fa-solid fa-phone"></i> 417-371-6798</a>
+        <a href="#quote" class="btn btn-primary" style="padding:11px 22px;font-size:0.88rem;">Get A Free Quote</a>
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#why" onclick="toggleMenu()">Why Choose Us</a>
+  <a href="#areas" onclick="toggleMenu()">Service Areas</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="tel:4173716798" class="mob-cta" onclick="toggleMenu()"><i class="fa-solid fa-phone"></i> Call 417-371-6798</a>
+  <a href="#quote" class="mob-cta" onclick="toggleMenu()" style="background:white;color:var(--blue);margin-top:8px;">Get A Free Quote</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-circle hero-circle-1"></div>
+    <div class="hero-circle hero-circle-2"></div>
+    <div class="hero-circle hero-circle-3"></div>
+    <div class="hero-glass"><div class="hero-glass-inner"><i class="fa-solid fa-window-restore"></i></div></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fa-solid fa-star" style="color:var(--gold)"></i> Locally Owned &amp; Operated — Nixa, MO</div>
+      <h1 class="hero-title">Crystal Clear Windows.<br/><span>Professional Results.</span></h1>
+      <p class="hero-sub">Serving Nixa and the entire 417 area with expert window cleaning for homes and businesses. Streak-free results. Honest pricing. Reliable scheduling.</p>
+      <div class="hero-phone-bar">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span>417-371-6798</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#quote" class="btn btn-primary"><i class="fa-solid fa-clipboard-list"></i> Get A Free Quote</a>
+        <a href="tel:4173716798" class="call-btn"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a href="#book" class="btn btn-outline">Book Online</a>
+      </div>
+      <div class="hero-trust">
+        <span class="trust-item"><i class="fa-solid fa-check-circle"></i> Locally Owned</span>
+        <span class="trust-item"><i class="fa-solid fa-check-circle"></i> Free Estimates</span>
+        <span class="trust-item"><i class="fa-solid fa-check-circle"></i> Reliable Scheduling</span>
+        <span class="trust-item"><i class="fa-solid fa-check-circle"></i> Satisfaction Focused</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div id="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-bar-item"><i class="fa-solid fa-map-marker-alt"></i> 417 Area's Trusted Window Cleaners</div>
+      <div class="trust-bar-divider"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-star"></i> 5-Star Service</div>
+      <div class="trust-bar-divider"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-shield-halved"></i> Fully Insured</div>
+      <div class="trust-bar-divider"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-tag"></i> Free Quotes</div>
+      <div class="trust-bar-divider"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-mobile-screen"></i> Call or Text Anytime</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="container">
+    <div class="services-header animate">
+      <span class="section-tag">Our Services</span>
+      <h2 class="section-title">Professional Window Cleaning<br/>Inside &amp; Out</h2>
+      <p class="section-sub">Our professional window cleaning service restores clarity, removes dirt and buildup, and leaves your windows streak-free inside and out.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card animate">
+        <div class="service-icon"><i class="fa-solid fa-sun"></i></div>
+        <h3>Exterior Glass Cleaning</h3>
+        <p>We thoroughly clean all exterior glass surfaces, removing dirt, pollen, hard water deposits, and oxidation for crystal-clear results you can see from the street.</p>
+      </div>
+      <div class="service-card animate">
+        <div class="service-icon"><i class="fa-solid fa-house-window"></i></div>
+        <h3>Interior Glass Cleaning</h3>
+        <p>Optional interior window cleaning available for full-service results. We use streak-free solutions and professional-grade squeegees for a flawless finish inside your home.</p>
+      </div>
+      <div class="service-card animate">
+        <div class="service-icon"><i class="fa-solid fa-border-all"></i></div>
+        <h3>Window Frame Cleaning</h3>
+        <p>We wipe down and clean all window frames and casings to complement your sparkling glass — because details matter in professional window cleaning.</p>
+      </div>
+      <div class="service-card animate">
+        <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <h3>Window Sill Cleaning</h3>
+        <p>Dusty, grimy sills are cleaned and wiped down as part of our standard service, leaving your entire window area looking brand new.</p>
+      </div>
+      <div class="service-card animate">
+        <div class="service-icon"><i class="fa-solid fa-arrows-alt-h"></i></div>
+        <h3>Track Cleaning</h3>
+        <p>Available upon request. We deep-clean window tracks that collect dirt, debris, and insects — ensuring smooth operation and a thorough clean throughout.</p>
+      </div>
+      <div class="service-card animate">
+        <div class="service-icon"><i class="fa-solid fa-grip-lines"></i></div>
+        <h3>Screen Cleaning</h3>
+        <p>Available upon request. Window screens are removed, cleaned, and reinstalled with care — removing pollen and buildup that blocks your view and light.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-left animate">
+        <span class="section-tag">Why ClearPane</span>
+        <h2 class="section-title">The Difference Is<br/>Crystal Clear.</h2>
+        <p class="section-sub">We're not just window cleaners — we're your neighbors. Locally owned and operated in Nixa, MO, we bring professional-grade results with a personal touch.</p>
+        <div class="why-cards">
+          <div class="why-card">
+            <div class="why-card-icon"><i class="fa-solid fa-star"></i></div>
+            <h4>Professional Results</h4>
+            <p>Streak-free windows and meticulous attention to detail on every job.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card-icon"><i class="fa-solid fa-comments"></i></div>
+            <h4>Friendly Service</h4>
+            <p>Easy communication through call, text, or online booking — whichever you prefer.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card-icon"><i class="fa-solid fa-tag"></i></div>
+            <h4>Affordable Pricing</h4>
+            <p>Competitive, transparent pricing with free quotes and no hidden fees.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card-icon"><i class="fa-solid fa-map-marker-alt"></i></div>
+            <h4>Locally Owned</h4>
+            <p>Serving our neighbors throughout Nixa and the 417 area with pride.</p>
+          </div>
+        </div>
+      </div>
+      <div class="why-right animate">
+        <div class="why-stat">
+          <div class="why-stat-num">417</div>
+          <div class="why-stat-label">Area's Premier Window Cleaning Service</div>
+        </div>
+        <div class="why-divider"></div>
+        <div class="why-stat">
+          <div class="why-stat-num">100%</div>
+          <div class="why-stat-label">Satisfaction Focused — Every Single Job</div>
+        </div>
+        <div class="why-divider"></div>
+        <p class="why-quote">"See Your Home In A Whole New Light."</p>
+        <a href="#quote" class="btn btn-outline" style="width:100%;justify-content:center;"><i class="fa-solid fa-clipboard-list"></i> Get Your Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BEFORE & AFTER ===== -->
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-header animate">
+      <span class="section-tag">Our Work</span>
+      <h2 class="section-title">Before &amp; After Gallery</h2>
+      <p class="section-sub">See the ClearPane difference. Our results speak for themselves — crystal-clear windows that transform the look of any home or business.</p>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-card animate">
+        <div class="ba-badge before">Before</div>
+        <div class="ba-card-inner">
+          <i class="ba-icon fa-solid fa-window-restore" style="opacity:0.3; font-size:4rem;"></i>
+          <div class="ba-label">Residential — Nixa, MO</div>
+          <div class="ba-sub">Dirt, pollen & hard water buildup</div>
+        </div>
+      </div>
+      <div class="ba-card animate">
+        <div class="ba-badge after">After</div>
+        <div class="ba-card-inner" style="background:linear-gradient(135deg,rgba(46,111,217,0.5),rgba(10,45,110,0.7));">
+          <i class="ba-icon fa-solid fa-window-restore"></i>
+          <div class="ba-label">Residential — Nixa, MO</div>
+          <div class="ba-sub">Crystal-clear, streak-free glass</div>
+        </div>
+      </div>
+      <div class="ba-card animate">
+        <div class="ba-badge before">Before</div>
+        <div class="ba-card-inner">
+          <i class="ba-icon fa-solid fa-building" style="opacity:0.3;"></i>
+          <div class="ba-label">Commercial — Springfield, MO</div>
+          <div class="ba-sub">Grime, fingerprints & oxidation</div>
+        </div>
+      </div>
+      <div class="ba-card animate">
+        <div class="ba-badge after">After</div>
+        <div class="ba-card-inner" style="background:linear-gradient(135deg,rgba(46,111,217,0.5),rgba(10,45,110,0.7));">
+          <i class="ba-icon fa-solid fa-building"></i>
+          <div class="ba-label">Commercial — Springfield, MO</div>
+          <div class="ba-sub">Spotless, professional results</div>
+        </div>
+      </div>
+      <div class="ba-card animate">
+        <div class="ba-badge before">Before</div>
+        <div class="ba-card-inner">
+          <i class="ba-icon fa-solid fa-store" style="opacity:0.3;"></i>
+          <div class="ba-label">Storefront — Ozark, MO</div>
+          <div class="ba-sub">Weather stains & debris</div>
+        </div>
+      </div>
+      <div class="ba-card animate">
+        <div class="ba-badge after">After</div>
+        <div class="ba-card-inner" style="background:linear-gradient(135deg,rgba(46,111,217,0.5),rgba(10,45,110,0.7));">
+          <i class="ba-icon fa-solid fa-store"></i>
+          <div class="ba-label">Storefront — Ozark, MO</div>
+          <div class="ba-sub">Bright, inviting storefront glass</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUOTE FORM ===== -->
+<section id="quote">
+  <div class="container">
+    <div class="quote-wrap">
+      <div class="quote-left animate">
+        <span class="section-tag">Free Estimate</span>
+        <h2 class="section-title">Get Your Free Quote Today</h2>
+        <p class="section-sub">Fill out the form and we'll get back to you promptly with a free, no-obligation quote. Prefer to talk? Call or text us at <strong><a href="tel:4173716798" style="color:var(--blue);">417-371-6798</a></strong>.</p>
+        <div class="quote-features">
+          <div class="quote-feat">
+            <div class="quote-feat-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h5>Fast Response</h5>
+              <p>We respond to all quote requests within a few hours — usually same day.</p>
+            </div>
+          </div>
+          <div class="quote-feat">
+            <div class="quote-feat-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+            <div>
+              <h5>No Obligation</h5>
+              <p>Your quote is 100% free with zero pressure. Transparent pricing always.</p>
+            </div>
+          </div>
+          <div class="quote-feat">
+            <div class="quote-feat-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <div>
+              <h5>Call or Text</h5>
+              <p>Prefer to call or text? Reach us directly at 417-371-6798.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quote-form-wrap animate">
+        <div class="form-title">Request A Free Quote</div>
+        <div class="form-sub">We'll get back to you quickly with honest, transparent pricing.</div>
+        <form id="quoteForm" onsubmit="submitForm(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" placeholder="Your phone" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label>Service Address *</label>
+              <input type="text" placeholder="Street address, city" required />
+            </div>
+            <div class="form-group">
+              <label>Service Needed</label>
+              <select>
+                <option value="">Select a service</option>
+                <option>Exterior Window Cleaning</option>
+                <option>Interior + Exterior Cleaning</option>
+                <option>Commercial Window Cleaning</option>
+                <option>Storefront Window Cleaning</option>
+                <option>Screen Cleaning</option>
+                <option>Track Cleaning</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Number of Windows</label>
+              <select>
+                <option value="">Approx. count</option>
+                <option>1–10 windows</option>
+                <option>11–20 windows</option>
+                <option>21–40 windows</option>
+                <option>40+ windows</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Preferred Contact Method</label>
+              <select>
+                <option>Phone Call</option>
+                <option>Text Message</option>
+                <option>Email</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label>Additional Notes</label>
+              <textarea placeholder="Anything else we should know? (multi-story, hard-to-reach windows, etc.)"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="form-submit"><i class="fa-solid fa-paper-plane"></i> Get My Free Quote</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <i class="fa-solid fa-circle-check"></i>
+          <h3>Quote Request Sent!</h3>
+          <p>We'll be in touch shortly. You can also call or text us at <strong>417-371-6798</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOK ONLINE ===== -->
+<section id="book">
+  <div class="container">
+    <div class="book-inner">
+      <span class="section-tag" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.85);">Book Online</span>
+      <h2 class="section-title">Ready To Book?</h2>
+      <p class="section-sub">Booking is easy. Choose your service, pick a date, and we'll confirm your appointment. Crystal-clear windows are just a few clicks away.</p>
+      <div class="book-steps">
+        <div class="book-step animate">
+          <div class="step-num">1</div>
+          <p>Choose your service type (residential or commercial)</p>
+        </div>
+        <div class="book-step animate">
+          <div class="step-num">2</div>
+          <p>Select your preferred date and time window</p>
+        </div>
+        <div class="book-step animate">
+          <div class="step-num">3</div>
+          <p>Submit and we'll confirm within hours</p>
+        </div>
+      </div>
+      <div class="book-actions">
+        <a href="#quote" class="btn btn-primary" style="background:white;color:var(--blue);"><i class="fa-solid fa-calendar-check"></i> Request A Booking</a>
+        <a href="tel:4173716798" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call To Schedule</a>
+        <a href="sms:4173716798" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);"><i class="fa-solid fa-comment-sms"></i> Text To Schedule</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials">
+  <div class="container">
+    <div class="test-header animate">
+      <span class="section-tag">What Customers Say</span>
+      <h2 class="section-title">Crystal Clear Results.<br/>Happy Customers.</h2>
+      <p class="section-sub">Don't take our word for it — see what homeowners and businesses in the 417 area are saying about ClearPane Exteriors.</p>
+    </div>
+    <div class="test-grid">
+      <div class="test-card animate">
+        <div class="test-quote-mark">"</div>
+        <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="test-text">ClearPane Exteriors made our windows look brand new. I couldn't believe the difference — every pane was absolutely spotless. Highly recommend to anyone in the Nixa area!</p>
+        <div class="test-author">
+          <div class="test-avatar">SH</div>
+          <div><div class="test-name">Sarah H.</div><div class="test-loc">Nixa, MO — Homeowner</div></div>
+        </div>
+      </div>
+      <div class="test-card animate">
+        <div class="test-quote-mark">"</div>
+        <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="test-text">Professional, responsive, and excellent results. We hired ClearPane for our rental property and they were on time, thorough, and the windows looked amazing. Will book again!</p>
+        <div class="test-author">
+          <div class="test-avatar">MB</div>
+          <div><div class="test-name">Marcus B.</div><div class="test-loc">Springfield, MO — Property Manager</div></div>
+        </div>
+      </div>
+      <div class="test-card animate">
+        <div class="test-quote-mark">"</div>
+        <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="test-text">Fast service and great communication from start to finish. Got a quote same day and had my storefront windows done by the end of the week. The difference is night and day!</p>
+        <div class="test-author">
+          <div class="test-avatar">JR</div>
+          <div><div class="test-name">Jessica R.</div><div class="test-loc">Ozark, MO — Business Owner</div></div>
+        </div>
+      </div>
+      <div class="test-card animate">
+        <div class="test-quote-mark">"</div>
+        <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="test-text">I was putting my house on the market and hired ClearPane to clean the windows. My realtor said it was one of the best things I did — the natural light just poured in. Incredible job!</p>
+        <div class="test-author">
+          <div class="test-avatar">DT</div>
+          <div><div class="test-name">David T.</div><div class="test-loc">Republic, MO — Home Seller</div></div>
+        </div>
+      </div>
+      <div class="test-card animate">
+        <div class="test-quote-mark">"</div>
+        <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="test-text">Honest pricing, showed up on time, and the windows were absolutely flawless. We've tried other services before but ClearPane is a level above. This is now our go-to every season.</p>
+        <div class="test-author">
+          <div class="test-avatar">KL</div>
+          <div><div class="test-name">Karen L.</div><div class="test-loc">Battlefield, MO — Homeowner</div></div>
+        </div>
+      </div>
+      <div class="test-card animate">
+        <div class="test-quote-mark">"</div>
+        <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="test-text">Bringing clarity back to our view — literally! Our office windows were embarrassingly dirty. ClearPane came out, worked efficiently, and left everything spotless. Highly professional team.</p>
+        <div class="test-author">
+          <div class="test-avatar">AM</div>
+          <div><div class="test-name">Alex M.</div><div class="test-loc">Willard, MO — Office Manager</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICE AREAS ===== -->
+<section id="areas">
+  <div class="container">
+    <div class="areas-header animate">
+      <span class="section-tag">Service Areas</span>
+      <h2 class="section-title">Proudly Serving the<br/>Entire 417 Area</h2>
+      <p class="section-sub">From Nixa to Springfield and everywhere in between — ClearPane Exteriors brings professional window cleaning to every corner of the 417.</p>
+    </div>
+    <div class="areas-grid">
+      <div class="area-card animate">
+        <div class="area-icon">📍</div>
+        <h3>Window Cleaning Nixa, MO</h3>
+        <p style="font-size:0.85rem;color:var(--gray);">Our home base. Delivering the best window cleaning in Nixa for residential and commercial properties.</p>
+        <div class="area-services">
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Residential Window Cleaning in Nixa</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Commercial Window Cleaning in Nixa</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Window Washing Nixa MO</span>
+        </div>
+      </div>
+      <div class="area-card animate">
+        <div class="area-icon">📍</div>
+        <h3>Window Cleaning Springfield, MO</h3>
+        <p style="font-size:0.85rem;color:var(--gray);">Full-service residential and commercial window cleaning across Springfield and surrounding neighborhoods.</p>
+        <div class="area-services">
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Residential Window Cleaning in Springfield</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Commercial Window Cleaning in Springfield</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Storefront Glass Cleaning</span>
+        </div>
+      </div>
+      <div class="area-card animate">
+        <div class="area-icon">📍</div>
+        <h3>Window Cleaning Ozark, MO</h3>
+        <p style="font-size:0.85rem;color:var(--gray);">Crystal-clear windows for Ozark homeowners and businesses. Call for a free quote today.</p>
+        <div class="area-services">
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Residential Window Cleaning in Ozark</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Commercial Window Cleaning in Ozark</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Exterior Glass Cleaning</span>
+        </div>
+      </div>
+      <div class="area-card animate">
+        <div class="area-icon">📍</div>
+        <h3>Window Cleaning Republic, MO</h3>
+        <p style="font-size:0.85rem;color:var(--gray);">Serving Republic residents and business owners with professional streak-free window cleaning.</p>
+        <div class="area-services">
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Residential Window Cleaning in Republic</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Commercial Window Cleaning in Republic</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Interior + Exterior Cleaning</span>
+        </div>
+      </div>
+      <div class="area-card animate">
+        <div class="area-icon">📍</div>
+        <h3>Window Cleaning Battlefield, MO</h3>
+        <p style="font-size:0.85rem;color:var(--gray);">Premium window cleaning for Battlefield homeowners — reliable, affordable, and streak-free every time.</p>
+        <div class="area-services">
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Residential Window Cleaning in Battlefield</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Commercial Window Cleaning in Battlefield</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Window Frame & Sill Cleaning</span>
+        </div>
+      </div>
+      <div class="area-card animate">
+        <div class="area-icon">📍</div>
+        <h3>Window Cleaning Willard, MO</h3>
+        <p style="font-size:0.85rem;color:var(--gray);">Top-rated window washing services for Willard, MO homes, offices, and storefronts.</p>
+        <div class="area-services">
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Residential Window Cleaning in Willard</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Commercial Window Cleaning in Willard</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Screen & Track Cleaning</span>
+        </div>
+      </div>
+      <div class="area-card animate">
+        <div class="area-icon">📍</div>
+        <h3>Window Cleaning Rogersville, MO</h3>
+        <p style="font-size:0.85rem;color:var(--gray);">Rogersville area window cleaning done right — on time, professional, and with guaranteed results.</p>
+        <div class="area-services">
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Residential Window Cleaning in Rogersville</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Commercial Window Cleaning in Rogersville</span>
+          <span class="area-service"><i class="fa-solid fa-circle"></i> Full-Service Window Cleaning</span>
+        </div>
+      </div>
+      <div class="area-card animate" style="border-style:dashed;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;gap:12px;">
+        <div style="font-size:2rem;">🌐</div>
+        <h3 style="color:var(--blue);">Surrounding Communities</h3>
+        <p style="font-size:0.85rem;color:var(--gray);">Don't see your city? We serve all of the 417 area. Call us and we'll come to you.</p>
+        <a href="tel:4173716798" class="btn btn-dark" style="margin-top:8px;padding:10px 22px;font-size:0.85rem;"><i class="fa-solid fa-phone"></i> Call Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img animate">
+        <div class="about-img-icon"><i class="fa-solid fa-handshake"></i></div>
+        <h3>ClearPane Exteriors</h3>
+        <p>Nixa, Missouri's trusted local window cleaning company — built on quality, honesty, and community.</p>
+        <div style="margin-top:24px;font-size:0.95rem;font-weight:700;color:rgba(255,255,255,0.5);letter-spacing:0.08em;">LOCALLY OWNED · 417 AREA</div>
+      </div>
+      <div class="about-content animate">
+        <span class="section-tag">Our Story</span>
+        <h2 class="section-title">A Local Business Built<br/>on Trust &amp; Quality</h2>
+        <p class="section-sub" style="margin-bottom:20px;">ClearPane Exteriors was founded right here in Nixa, Missouri by a young entrepreneur with a simple mission: provide the kind of honest, reliable, high-quality service that the 417 area deserves.</p>
+        <p style="font-size:0.95rem;color:var(--gray);line-height:1.75;">We started with a belief that window cleaning should be done the right way — with professional-grade equipment, meticulous attention to detail, and a commitment to customer satisfaction that goes beyond the job. Every home and business we serve gets our full effort, because we know that your trust is earned one sparkling window at a time.</p>
+        <p style="font-size:0.95rem;color:var(--gray);line-height:1.75;margin-top:16px;">As a locally owned company, we treat every customer like a neighbor — because you are. We take pride in our community, show up when we say we will, communicate honestly, and never cut corners. That's the ClearPane promise.</p>
+        <div class="about-values">
+          <div class="about-val">
+            <i class="fa-solid fa-map-marker-alt about-val-icon"></i>
+            <div><h5>Local Ownership</h5><p>Proud to serve our neighbors throughout the 417 area.</p></div>
+          </div>
+          <div class="about-val">
+            <i class="fa-solid fa-magnifying-glass about-val-icon"></i>
+            <div><h5>Attention to Detail</h5><p>Every frame, sill, and pane gets meticulous care.</p></div>
+          </div>
+          <div class="about-val">
+            <i class="fa-solid fa-comments about-val-icon"></i>
+            <div><h5>Honest Communication</h5><p>Transparent pricing and clear scheduling. Always.</p></div>
+          </div>
+          <div class="about-val">
+            <i class="fa-solid fa-medal about-val-icon"></i>
+            <div><h5>Professional Standards</h5><p>Pro-grade tools and techniques on every single job.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-wrap">
+      <div class="animate">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Common Questions</h2>
+        <p class="section-sub" style="margin-bottom:32px;">Can't find your answer? Call or text us at <a href="tel:4173716798" style="color:var(--blue);font-weight:700;">417-371-6798</a> — we're happy to help.</p>
+        <a href="tel:4173716798" class="btn btn-dark"><i class="fa-solid fa-phone"></i> Call Us Now</a>
+      </div>
+      <div class="faq-list animate">
+        <div class="faq-item open">
+          <div class="faq-q" onclick="toggleFaq(this)">How much does window cleaning cost? <i class="fa-solid fa-chevron-down"></i></div>
+          <div class="faq-a"><div class="faq-a-inner">Pricing varies based on the number of windows, accessibility, and services requested. We provide free, no-obligation quotes — contact us at 417-371-6798 or fill out our online form to get your personalized estimate.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Do you clean interior and exterior windows? <i class="fa-solid fa-chevron-down"></i></div>
+          <div class="faq-a"><div class="faq-a-inner">Yes! We offer exterior-only cleaning or full interior + exterior service. Just let us know what you need when you request your quote and we'll customize the service for your home or business.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">How often should I get my windows cleaned? <i class="fa-solid fa-chevron-down"></i></div>
+          <div class="faq-a"><div class="faq-a-inner">For most homes, we recommend cleaning 2–4 times per year. Businesses and storefronts often benefit from monthly service. We're happy to set up a recurring schedule that works for your budget and property.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">What areas do you serve? <i class="fa-solid fa-chevron-down"></i></div>
+          <div class="faq-a"><div class="faq-a-inner">We serve Nixa, Springfield, Ozark, Republic, Battlefield, Willard, Rogersville, and all surrounding communities in the 417 area. Not sure if we come to you? Give us a call — chances are we do!</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Do you clean screens and tracks? <i class="fa-solid fa-chevron-down"></i></div>
+          <div class="faq-a"><div class="faq-a-inner">Yes, screen cleaning and track cleaning are both available upon request. Just mention it when booking and we'll include it in your quote.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Are you insured? <i class="fa-solid fa-chevron-down"></i></div>
+          <div class="faq-a"><div class="faq-a-inner">Yes. ClearPane Exteriors operates as a fully insured business so you have complete peace of mind while we work on your property. We take every precaution to protect your home and our team.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Do I need to be home during the cleaning? <i class="fa-solid fa-chevron-down"></i></div>
+          <div class="faq-a"><div class="faq-a-inner">For exterior-only service, you typically don't need to be home. For interior cleaning, we do ask that someone is present. We'll coordinate all details with you in advance so everything goes smoothly.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <span class="section-tag" style="background:rgba(168,200,240,0.15);color:var(--glass);">Contact Us</span>
+      <h2 class="section-title animate">Ready For Crystal Clear Windows?</h2>
+      <p class="section-sub animate">Get in touch today for your free quote. We respond fast — usually same day.</p>
+      <div class="contact-cards">
+        <div class="contact-card animate">
+          <i class="fa-solid fa-phone"></i>
+          <h4>Call or Text</h4>
+          <a href="tel:4173716798">417-371-6798</a>
+        </div>
+        <div class="contact-card animate">
+          <i class="fa-solid fa-envelope"></i>
+          <h4>Email Us</h4>
+          <a href="mailto:lhcollins08@gmail.com">lhcollins08@gmail.com</a>
+        </div>
+        <div class="contact-card animate">
+          <i class="fa-solid fa-map-marker-alt"></i>
+          <h4>Service Area</h4>
+          <p>Nixa &amp; 417 Area, MO</p>
+        </div>
+        <div class="contact-card animate">
+          <i class="fa-solid fa-clock"></i>
+          <h4>Hours</h4>
+          <p>Mon–Sat: 8am–6pm</p>
+        </div>
+      </div>
+      <div class="contact-cta-btns animate">
+        <a href="tel:4173716798" class="btn btn-primary" style="font-size:1.05rem;padding:17px 36px;"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a href="#quote" class="btn" style="background:rgba(255,255,255,0.1);color:white;border:2px solid rgba(255,255,255,0.25);padding:17px 36px;font-size:1.05rem;"><i class="fa-solid fa-clipboard-list"></i> Request A Quote</a>
+        <a href="sms:4173716798" class="btn" style="background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.8);border:2px solid rgba(255,255,255,0.15);padding:17px 36px;font-size:1.05rem;"><i class="fa-solid fa-comment-sms"></i> Text Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MAP PLACEHOLDER ===== -->
+<div id="map">
+  <div class="map-placeholder">
+    <i class="fa-solid fa-map-pin" style="color:var(--blue-light);font-size:3rem;"></i>
+    <p style="color:white;">ClearPane Exteriors — Nixa, Missouri</p>
+    <span style="color:rgba(255,255,255,0.45);font-size:0.85rem;">Serving Nixa, Springfield, Ozark, Republic, Battlefield, Willard, Rogersville &amp; surrounding areas</span>
+    <a href="https://maps.google.com/?q=Nixa,MO" target="_blank" class="btn btn-ghost" style="margin-top:12px;padding:11px 24px;font-size:0.9rem;"><i class="fa-brands fa-google"></i> Open in Google Maps</a>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo" style="margin-bottom:0;">
+          <div class="logo-icon"><i class="fa-solid fa-window-restore"></i></div>
+          <div class="logo-text">
+            <span class="logo-name" style="font-size:1.2rem;">ClearPane Exteriors</span>
+            <span class="logo-tagline">Professional Window Cleaning</span>
+          </div>
+        </a>
+        <p class="footer-tagline">"See Your Home In A Whole New Light." <br/>Serving Nixa and the entire 417 area with professional, streak-free window cleaning for homes and businesses.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-google"></i></a>
+          <a href="sms:4173716798" class="social-btn"><i class="fa-solid fa-comment-sms"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <div class="footer-links">
+          <a href="#services">Exterior Window Cleaning</a>
+          <a href="#services">Interior Window Cleaning</a>
+          <a href="#services">Frame &amp; Sill Cleaning</a>
+          <a href="#services">Screen Cleaning</a>
+          <a href="#services">Track Cleaning</a>
+          <a href="#services">Commercial Cleaning</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Service Areas</h5>
+        <div class="footer-links">
+          <a href="#areas">Nixa, MO</a>
+          <a href="#areas">Springfield, MO</a>
+          <a href="#areas">Ozark, MO</a>
+          <a href="#areas">Republic, MO</a>
+          <a href="#areas">Battlefield, MO</a>
+          <a href="#areas">Willard, MO</a>
+          <a href="#areas">Rogersville, MO</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <div class="footer-links">
+          <a href="#about">About Us</a>
+          <a href="#why">Why Choose Us</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#quote">Free Quote</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ClearPane Exteriors. All rights reserved. | Nixa, Missouri | Serving the 417 Area</p>
+      <a href="tel:4173716798" class="footer-phone"><i class="fa-solid fa-phone"></i> 417-371-6798</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== FLOATING CTA ===== -->
+<div class="floating-cta">
+  <a href="#quote" class="float-btn float-quote"><i class="fa-solid fa-clipboard-list"></i><span>Free Quote</span></a>
+  <a href="tel:4173716798" class="float-btn float-call"><i class="fa-solid fa-phone"></i><span>Call Now</span></a>
+</div>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+  // Sticky nav
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+
+  // Animate on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+
+  // FAQ
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Form submit
+  function submitForm(e) {
+    e.preventDefault();
+    document.getElementById('quoteForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+
+  // Smooth scroll for all anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+<!-- Schema.org Local Business JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ClearPane Exteriors",
+  "description": "Professional window cleaning in Nixa, MO and the 417 area. Residential and commercial window washing services with free quotes.",
+  "telephone": "417-371-6798",
+  "email": "lhcollins08@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Nixa",
+    "addressRegion": "MO",
+    "addressCountry": "US"
+  },
+  "areaServed": ["Nixa, MO", "Springfield, MO", "Ozark, MO", "Republic, MO", "Battlefield, MO", "Willard, MO", "Rogersville, MO"],
+  "serviceType": ["Window Cleaning", "Residential Window Cleaning", "Commercial Window Cleaning", "Exterior Window Cleaning", "Interior Window Cleaning"],
+  "url": "https://clearpaneexteriors.com",
+  "openingHours": "Mo-Sa 08:00-18:00",
+  "priceRange": "$$",
+  "slogan": "See Your Home In A Whole New Light."
+}
+</script>
+
+</body>
+</html>
